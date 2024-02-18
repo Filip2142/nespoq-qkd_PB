@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3-dev
+
+Name: libns3-brite
+Description: ns-3 module ns3-brite
+Version: 3-dev
+Libs: -L${libdir} -Wl,-Bdynamic -lns3-dev-brite-debug -L/media/mmehic/4896702c-b2db-468f-8e33-f5e7bc970b7e/ns3/BRITE -lbrite -ldl
+Cflags: -I${includedir} -DNS3_BRITE -I/media/mmehic/4896702c-b2db-468f-8e33-f5e7bc970b7e/ns3/BRITE -I/media/mmehic/4896702c-b2db-468f-8e33-f5e7bc970b7e/ns3/BRITE/Models
+Requires: libns3-dev-network-debug libns3-dev-core-debug libns3-dev-internet-debug libns3-dev-point-to-point-debug
